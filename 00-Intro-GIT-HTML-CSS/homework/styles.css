@@ -1,0 +1,17 @@
+.divClass h1 {
+  color: midnightblue;
+}
+img {
+  width: 400px;
+}
+#thirdDiv {
+  height: 600px;
+  width: 500px;
+  background-color: cornflowerblue;
+  padding: 50px;
+  border: 1px solid midnightblue;
+}
+#spanId {
+  font-size: 25px;
+  margin: 50px;
+}
