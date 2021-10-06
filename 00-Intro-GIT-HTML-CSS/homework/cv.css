@@ -1,0 +1,74 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#titulo {
+  text-align: center;
+  color: midnightblue;
+}
+
+#descripcion {
+  text-align: justify;
+}
+
+#educacion h3 {
+  text-align: center;
+  color: midnightblue;
+}
+
+#educacion ul li .year {
+  color: midnightblue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#experiencia h3 {
+  text-align: center;
+  color: midnightblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.skill {
+  padding-right: 10rem;
+}
+figure {
+  text-align: center;
+}
+img {
+  height: 50vh;
+}
+
+#hobbies {
+  text-align: center;
+  color: midnightblue;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: cornflowerblue;
+  color: midnightblue;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: midnightblue;
+}
+footer i {
+  font-size: 1.5rem;
+}
