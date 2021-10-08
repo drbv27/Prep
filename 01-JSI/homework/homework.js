@@ -128,14 +128,11 @@ function esVocal(letra) {
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
+  let format = /[aeiouAEIOU]+/;
   if (letra.length > 1) {
     return "Dato incorrecto";
   } else {
-    if (
-      letra.includes(
-        "a" || "A" || "e" || "E" || "i" || "I" || "o" || "O" || "u" || "U"
-      )
-    ) {
+    if (format.test(letra)) {
       return "Es vocal";
     }
   }
@@ -204,7 +201,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero > 20 && numero > 50) {
+  if (numero > 20 && numero < 50) {
     return true;
   } else {
     return false;
@@ -218,7 +215,7 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
-  if (numero === 0 || numero === 1) return false;
+  if (numero === 0 || numero === 1 || numero === 4) return false;
   for (let x = 2; x < numero / 2; x++) {
     if (numero % x === 0) return false;
   }
@@ -235,6 +232,7 @@ function doWhile(numero) {
     numero += 5;
     i++;
   }
+  return numero;
 }
 
 // No modificar nada debajo de esta línea
